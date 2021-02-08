@@ -2,7 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Crew" representedClassName="Crew" syncable="YES" codeGenerationType="class">
         <attribute name="playersCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="privateOrPublic" optional="YES" attributeType="String"/>
+        <attribute name="privateOrPublic" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="teamName" optional="YES" attributeType="String"/>
         <relationship name="playersSet" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Player" inverseName="crew" inverseEntity="Player"/>
