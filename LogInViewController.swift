@@ -15,6 +15,14 @@ class LogInViewController: UIViewController {
     @IBOutlet var dataTextFieldCollection: [UITextField]!
     @IBOutlet var phoneNumberTextField: UITextField!
     @IBOutlet var registerButton: UIButton!
+    var firstNameIndex = 0
+    var lastNameIndex = 1
+    var emailIndex = 2
+    var ageIndex = 3
+    var logIndex = 4
+    var paswordIndex = 5
+    var confirmPasIndex = 6
+    var phoneNumbIndex = 7
     
     let request:NSFetchRequest<Player> = NSFetchRequest<Player>(entityName: "Player")
     var allPlayers:[Player]?
@@ -44,19 +52,19 @@ class LogInViewController: UIViewController {
     
     
     @IBAction func dataTextFieldsChanged(_ sender: UITextField) {
-        if dataTextFieldCollection[2].text?.contains("@") == false {
-            asteriskLabelCollection[2].textColor = .red
+        if dataTextFieldCollection[emailIndex].text?.contains("@") == false {
+            asteriskLabelCollection[emailIndex].textColor = .red
         }else {
-            asteriskLabelCollection[2].textColor = .green
+            asteriskLabelCollection[emailIndex].textColor = .green
         }
-        if dataTextFieldCollection[6].text != dataTextFieldCollection[5].text {
-            asteriskLabelCollection[6].textColor = .red
+        if dataTextFieldCollection[confirmPasIndex].text != dataTextFieldCollection[paswordIndex].text {
+            asteriskLabelCollection[confirmPasIndex].textColor = .red
         }else {
-            asteriskLabelCollection[6].textColor = .green
+            asteriskLabelCollection[confirmPasIndex].textColor = .green
         }
         
         for i in 0 ... dataTextFieldCollection.count - 1 {
-            if i != 2 && i != 6 {
+            if i != emailIndex && i != confirmPasIndex {
                 if (dataTextFieldCollection[i].text?.count ?? 0) > 3 {
                     asteriskLabelCollection[i].textColor = .green
                 }
@@ -78,13 +86,13 @@ class LogInViewController: UIViewController {
             }
         }
         let newPlayer = Player(context: context)
-        newPlayer.name = dataTextFieldCollection[0].text
-        newPlayer.lastName = dataTextFieldCollection[1].text
-        newPlayer.email = dataTextFieldCollection[2].text
-        newPlayer.age = dataTextFieldCollection[3].text 
-        newPlayer.login = dataTextFieldCollection[4].text
-        newPlayer.parol = dataTextFieldCollection[5].text
-        newPlayer.phoneNumber = dataTextFieldCollection[6].text
+        newPlayer.name = dataTextFieldCollection[firstNameIndex].text
+        newPlayer.lastName = dataTextFieldCollection[lastNameIndex].text
+        newPlayer.email = dataTextFieldCollection[emailIndex].text
+        newPlayer.age = dataTextFieldCollection[ageIndex].text
+        newPlayer.login = dataTextFieldCollection[logIndex].text
+        newPlayer.parol = dataTextFieldCollection[paswordIndex].text
+        newPlayer.phoneNumber = dataTextFieldCollection[phoneNumbIndex].text
         allPlayers?.append(newPlayer)
         try? context.save()
         performSegue(withIdentifier: "pressCodeIdent", sender: nil)

@@ -16,6 +16,7 @@
 		5230E2D825CBE4A100C58809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5230E2D625CBE4A100C58809 /* LaunchScreen.storyboard */; };
 		5230E2E325CBE4A100C58809 /* newCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230E2E225CBE4A100C58809 /* newCoreDataTests.swift */; };
 		5230E2EE25CBE4A100C58809 /* newCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230E2ED25CBE4A100C58809 /* newCoreDataUITests.swift */; };
+		525599C725D169BA00911E9E /* CrateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525599C625D169BA00911E9E /* CrateGroupViewController.swift */; };
 		525F32E625CBF96900A7B151 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F32E525CBF96900A7B151 /* MyTableViewCell.swift */; };
 		525F32EB25CBFA2900A7B151 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F32EA25CBFA2900A7B151 /* SignInViewController.swift */; };
 		526A8ABB25CBE8C300C7AF3B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A8ABA25CBE8C300C7AF3B /* LogInViewController.swift */; };
@@ -57,6 +58,7 @@
 		5230E2E925CBE4A100C58809 /* newCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5230E2ED25CBE4A100C58809 /* newCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newCoreDataUITests.swift; sourceTree = "<group>"; };
 		5230E2EF25CBE4A100C58809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525599C625D169BA00911E9E /* CrateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrateGroupViewController.swift; sourceTree = "<group>"; };
 		525F32E525CBF96900A7B151 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		525F32EA25CBFA2900A7B151 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		526A8ABA25CBE8C300C7AF3B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				5230E2CA25CBE4A000C58809 /* SceneDelegate.swift */,
 				5230E2CC25CBE4A000C58809 /* ViewController.swift */,
 				5230E2CE25CBE4A000C58809 /* Main.storyboard */,
+				525599C625D169BA00911E9E /* CrateGroupViewController.swift */,
 				525F32EA25CBFA2900A7B151 /* SignInViewController.swift */,
 				525F32E525CBF96900A7B151 /* MyTableViewCell.swift */,
 				526A8AC925CBF77D00C7AF3B /* CrewViewController.swift */,
@@ -286,6 +289,7 @@
 				5230E2C925CBE4A000C58809 /* AppDelegate.swift in Sources */,
 				525F32E625CBF96900A7B151 /* MyTableViewCell.swift in Sources */,
 				526A8AC025CBEEA400C7AF3B /* CodeViewController.swift in Sources */,
+				525599C725D169BA00911E9E /* CrateGroupViewController.swift in Sources */,
 				526A8ABB25CBE8C300C7AF3B /* LogInViewController.swift in Sources */,
 				525F32EB25CBFA2900A7B151 /* SignInViewController.swift in Sources */,
 				5230E2CB25CBE4A000C58809 /* SceneDelegate.swift in Sources */,

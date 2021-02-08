@@ -21,10 +21,10 @@ class PlayerPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         cellAppDelegate()
-        ageLabel.text = allPlayers?[0].age
-        firstNameLabel.text = allPlayers?[0].name
-        lastNameLabel.text = allPlayers?[0].lastName
-        loginLabel.text = allPlayers?[0].login 
+        ageLabel.text = allPlayers?[2].age
+        firstNameLabel.text = allPlayers?[2].name
+        lastNameLabel.text = allPlayers?[2].lastName
+        loginLabel.text = allPlayers?[2].login
     
         // Do any additional setup after loading the view.
     }
